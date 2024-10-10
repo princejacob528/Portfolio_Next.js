@@ -11,17 +11,17 @@ export async function POST(request) {
     port: '587',
     secure: false,
     auth: {
-      user: "princedeveloper24@gmail.com",
-      pass: "hrpa mlmt tman sptj",
+      user: "YourMailId@gmail.com",
+      pass: "YourPasskey",
     },
   });
 
   const htmlContent = getEmailTemplate(formData);
 
   const mailOptions = {
-    from: "PrinceDev Mailer <princedeveloper24@gmail.com>",
-      to: "princejacob528@gmail.com", // Change this to the recipient email
-      subject: "New Message from PrinceDev.in",
+    from: "YourMailId@gmail.com",
+      to: "RecipientMailID@gmail.com",
+      subject: "New Message from YourDomainName",
       html: htmlContent,
       category: "Message"
   };
